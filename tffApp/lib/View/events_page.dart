@@ -127,12 +127,17 @@ class EventsPage extends StatelessWidget {
             Container(
               height: 405,
               child: Padding(
-                padding: EdgeInsets.only(left: 24.0, right: 24.0, top: 24.0,),
+                padding: EdgeInsets.only(
+                  left: 24.0,
+                  right: 24.0,
+                  top: 24.0,
+                ),
                 child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Description :',
+                      Text(
+                        'Description :',
                         style: GoogleFonts.lato(
                           textStyle: TextStyle(
                             fontSize: 23,
@@ -144,7 +149,8 @@ class EventsPage extends StatelessWidget {
                       SizedBox(
                         height: 8,
                       ),
-                      Text('Here comes the description of the event. I was not able to find anything on instagram about an event or its description so i am just randomly brabring something in this column. Since you have got so far reading this that means you are so idle and just stop reading now kyunki iske aage tumhe kuch kaam ka nahi milne wala so lamo.',
+                      Text(
+                        'Here comes the description of the event. I was not able to find anything on instagram about an event or its description so i am just randomly brabring something in this column. Since you have got so far reading this that means you are so idle and just stop reading now kyunki iske aage tumhe kuch kaam ka nahi milne wala so lamo.',
                         style: GoogleFonts.lato(
                           textStyle: TextStyle(
                             fontSize: 18,
@@ -156,7 +162,8 @@ class EventsPage extends StatelessWidget {
                       SizedBox(
                         height: 18.0,
                       ),
-                      Text('Images',
+                      Text(
+                        'Images',
                         style: GoogleFonts.lato(
                           textStyle: TextStyle(
                             fontSize: 23,
@@ -169,32 +176,30 @@ class EventsPage extends StatelessWidget {
                         height: 18.0,
                       ),
                       Row(
-                        children: [
-
-                        ],
+                        children: [],
                       ),
                       SizedBox(
                         height: 30.0,
                       ),
                       Center(
                         child: GestureDetector(
-                          onTap:(){},
+                          onTap: () {},
                           child: Container(
                             height: 50.0,
-                            width: MediaQuery.of(context).size.width/1.5,
+                            width: MediaQuery.of(context).size.width / 1.5,
                             decoration: BoxDecoration(
                               color: Colors.lightBlue,
-                              borderRadius: BorderRadius.all(Radius.circular(24.0)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(24.0)),
                             ),
                             child: Center(
                               child: Text(
                                 'Register',
                                 style: GoogleFonts.lato(
                                   textStyle: TextStyle(
-                                    fontSize: 19.0,
-                                    color: Colors.white70,
-                                    fontWeight: FontWeight.w600
-                                  ),
+                                      fontSize: 19.0,
+                                      color: Colors.white70,
+                                      fontWeight: FontWeight.w600),
                                 ),
                               ),
                             ),
